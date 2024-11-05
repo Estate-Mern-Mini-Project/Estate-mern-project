@@ -1,5 +1,6 @@
 # Estate+ 
 ## Real Estate Platform
+
 Estate+ is a real estate web application built using the MERN stack, designed to simplify property listing and browsing. The platform offers users an interactive experience with secure login, property management features, and real-time map-based filtering.
 
 ### Features
@@ -17,8 +18,8 @@ Estate+ is a real estate web application built using the MERN stack, designed to
 
 ### Project Structure
 ```bash
-/client: Contains the React frontend
-/server: Contains the Node.js backend, Express routes, and database configuration
+    /client: Contains the React frontend
+    /server: Contains the Node.js backend, Express routes, and database configuration
 ```
 ### Setup Instructions
 #### 1. Clone the Repository
@@ -27,38 +28,45 @@ Estate+ is a real estate web application built using the MERN stack, designed to
     cd Estate-mern-project
 ```
 #### 2. Install Dependencies
-```bash
-•	Install dependencies for the frontend:
-        cd client
-        npm install
 
-•	Install dependencies for the backend:
-        cd ../server
-        npm install
+###### •	Install dependencies for the frontend:
+```bash
+    cd client
+    npm install
+```
+###### •	Install dependencies for the backend:
+```bash
+    cd ../server
+    npm install
 ```
 #### 3. Set up Environment Variables
 ##### Create .env files in both client and server directories with the following keys:
-```bash
-•	Backend .env:
-        DATABASE_URL = your_mongodb_connection_string
-        JWT_SECRET_KEY = your_jwt_secret
-        CLIENT_URL = http://localhost:3000
 
-•	Frontend .env:
-        REACT_APP_GOOGLE_MAPS_API_KEY = your_google_maps_api_key
+###### •	Backend .env:
+```bash
+    DATABASE_URL = your_mongodb_connection_string
+    JWT_SECRET_KEY = your_jwt_secret
+    CLIENT_URL = http://localhost:3000
+```
+###### •	Frontend .env:
+```bash
+    REACT_APP_GOOGLE_MAPS_API_KEY = your_google_maps_api_key
 ```
 
 #### 4. Run the Project Locally
-```bash
-•	Start the backend server:
-        cd server
-        nodemon –env-file=.env app.js
-•	Start the frontend development server:
-        cd ../client
-        npm start
 
-•   Access the application at http://localhost:3000.
+###### •	Start the backend server:
+```bash
+    cd server
+    nodemon –env-file=.env app.js
 ```
+###### •	Start the frontend development server:
+```bash
+    cd ../client
+    npm start
+```
+###### •   Access the application at http://localhost:3000.
+
 ### Deployment on Render
 ###### 1.	Push the code to GitHub.
 ###### 2.	Create a new Web Service on Render for the backend, linking it to the server folder in the GitHub repository.
